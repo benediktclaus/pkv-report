@@ -1,4 +1,4 @@
-#import "@local/pkv-report:0.1.0": *
+#import "@local/pkv-report:0.2.0": *
 #let therapiebeginn = [03.04.2024]
 #let sitzungen-bisher = 24
 

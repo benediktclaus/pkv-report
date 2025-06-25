@@ -43,19 +43,18 @@
   body,
 ) = {
   set par(justify: true)
-  set text(font: "Alegreya", number-type: "lining", lang: "de")
+  set text(font: "STIX Two Text", number-type: "lining", lang: "de", size: 10pt)
+  show math.equation: set text(font: "STIX Two Math", size: 10pt)
   set page(
     margin: (x: 20mm, y: 20mm),
     numbering: (a, b) => [Seite #a von #b],
   )
 
-  show math.equation: set text(size: 10pt)
-
   set heading(numbering: "I.1")
 
-  show heading.where(level: 1): set text(size: 12pt)
+  show heading.where(level: 1): set text(size: 11pt, font: "Fira Sans", weight: "semibold")
   show heading.where(level: 2): it => {
-    block(text(size: 11pt)[#context counter(heading).get().last() #h(0.2em) #it.body])
+    block(text(size: 11pt, font: "Fira Sans", weight: "semibold")[#context counter(heading).get().last() #h(0.2em) #it.body])
   }
 
   let datumfinal = if datum == none {
@@ -118,7 +117,9 @@
 
   body
 
+
   bibliography("refs.bib", style: "apa", title: "Literatur")
+
 
   v(1em)
   grid(
