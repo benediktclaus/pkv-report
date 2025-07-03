@@ -43,8 +43,8 @@
   body,
 ) = {
   set par(justify: true)
-  set text(font: "STIX Two Text", number-type: "lining", lang: "de", size: 10pt)
-  show math.equation: set text(font: "STIX Two Math", size: 10pt)
+  set text(font: "STIX Two Text", number-type: "lining", lang: "de", size: 11pt)
+  show math.equation: set text(font: "STIX Two Math", size: 11pt)
   set page(
     margin: (x: 20mm, y: 20mm),
     numbering: (a, b) => [Seite #a von #b],
