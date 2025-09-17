@@ -47,7 +47,7 @@
   show math.equation: set text(font: "STIX Two Math", size: 11pt)
   set page(
     margin: (x: 20mm, y: 20mm),
-    numbering: (a, b) => [Seite #a von #b],
+    numbering: "1/1",
   )
 
   set heading(numbering: "I.1")
