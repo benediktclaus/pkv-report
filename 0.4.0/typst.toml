@@ -1,0 +1,12 @@
+[package]
+name = "pkv-report"
+version = "0.4.0"
+entrypoint = "lib.typ"
+authors = ["Benedikt Claus"]
+license = "MIT"
+description = "Report templates for German psychotherapy application (PKV)"
+
+[template]
+path = "template"
+entrypoint = "main.typ"
+thumbnail = "thumbnail.png"
