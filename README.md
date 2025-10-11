@@ -1,8 +1,8 @@
-# Typst Report Template for German Psychotherapy (PKV)
+# typst Report Template for German Psychotherapy (PKV)
 
 [![License: MIT](https://img.shields.io/github/license/benediktclaus/pkv-report)](LICENSE)
 
-A Typst template for creating psychotherapy reports for German private health insurance providers (PKV) and Beihilfe. This template automates the layout and formatting, allowing you to focus on the content.
+A typst template for creating psychotherapy reports for German private health insurance providers (PKV) and Beihilfe. This template automates the layout and formatting, allowing you to focus on the content.
 
 ## Preview
 
@@ -37,7 +37,7 @@ This template requires the `psymbols` package for microanalysis symbols. Install
 ### Step 3: Install This Template
 
 1.  **Download the Repository:** Clone or download this repository as a ZIP file and extract it.
-2.  **Find Your Local Typst Package Directory:** You need to find the standard package directory for your operating system.
+2.  **Find Your Local typst Package Directory:** You need to find the standard package directory for your operating system.
     * **Windows:** `%APPDATA%\typst\packages\` (e.g., `C:\Users\<YourName>\AppData\Roaming\typst\packages`)
     * **macOS:** `~/Library/Application Support/typst/packages/`
     * **Linux:** `~/.local/share/typst/packages/`
