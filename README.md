@@ -1,10 +1,10 @@
 # typst Report Template for German Psychotherapy (PKV)
 
-![GitHub License](https://img.shields.io/github/license/benediktclaus/pkv-report)
-![GitHub Release](https://img.shields.io/github/v/release/benediktclaus/pkv-report)
-![GitHub last commit](https://img.shields.io/github/last-commit/benediktclaus/pkv-report)
+[![GitHub License](https://img.shields.io/github/license/benediktclaus/pkv-report)](LICENSE)
+[![GitHub Release](https://img.shields.io/github/v/release/benediktclaus/pkv-report)](https://github.com/benediktclaus/pkv-report/releases)
+[![GitHub last commit](https://img.shields.io/github/last-commit/benediktclaus/pkv-report)](https://github.com/benediktclaus/pkv-report/commits/main)
 
-A typst template for creating psychotherapy reports for German private health insurance providers (PKV) and Beihilfe. This template automates the layout and formatting, allowing you to focus on the content.
+A `typst` template for creating psychotherapy reports for German private health insurance providers (PKV) and Beihilfe. This template automates the layout and formatting, allowing you to focus on the content.
 
 ## Preview
 
@@ -27,23 +27,23 @@ This template requires a few dependencies to be installed manually to work as in
 
 ### Step 1: Install Required Fonts
 
-This template is designed to use specific fonts for optimal appearance. Please download and install them on your system:
+This template is designed to use specific fonts for optimal appearance. Please download and install them on your system from their official sources:
 
-* **[STIX Two Text](https://fonts.google.com/specimen/STIX+Two+Text):** Used for body text and mathematical notation.
-* **[Fira Sans](https://fonts.google.com/specimen/Fira+Sans):** Used for headings and other UI elements.
+* **[STIX Two Text & Math](https://www.stixfonts.org/):** The primary font for body text and all mathematical formulas.
+* **[Fira Sans](https://fonts.google.com/specimen/Fira+Sans):** Used for headings.
 
 ### Step 2: Install `psymbols` Package
 
-This template requires the `psymbols` package for microanalysis symbols. Install it first by following its [local installation guide](https://github.com/benediktclaus/psymbols#installation-local-setup).
+This template requires the `psymbols` package for microanalysis symbols. Install it first by following its [local installation guide](https://github.com/benediktclaus/psymbols#installation).
 
 ### Step 3: Install This Template
 
-1.  **Download the Repository:** Clone or download this repository as a ZIP file and extract it.
+1.  **Download the Latest Release:** Go to the [Releases page](https://github.com/benediktclaus/pkv-report/releases) and download the source code ZIP file of the latest version.
 2.  **Find Your Local typst Package Directory:** You need to find the standard package directory for your operating system.
     * **Windows:** `%APPDATA%\typst\packages\` (e.g., `C:\Users\<YourName>\AppData\Roaming\typst\packages`)
     * **macOS:** `~/Library/Application Support/typst/packages/`
     * **Linux:** `~/.local/share/typst/packages/`
-3.  **Move the Package Files:** Create the following folder structure inside your `packages` directory and move the downloaded files into it.
+3.  **Move the Package Files:** Extract the downloaded ZIP file. Create the following folder structure inside your `packages` directory and move the extracted contents into it.
     `.../packages/local/pkv-report/0.4.0/`
     Inside this `0.4.0` folder, you should place the `typst.toml`, `lib.typ`, and the `template` folder.
 
@@ -97,6 +97,10 @@ The `pkvbericht.with()` function accepts the following parameters:
 | `anzahl-frequenz-bisher` | Content | A description of the sessions already conducted (number and frequency).  |
 | `anzahl-frequenz`        | Content | The number and frequency of sessions being applied for in this report.   |
 | `datum`                  | Content | The date the report is being written.                                    |
+
+## Contributing & Feedback
+
+This package is designed for practical use. If you have suggestions for improvements or encounter any issues, please feel free to [open an issue](https://github.com/benediktclaus/pkv-report/issues).
 
 ## License
 
