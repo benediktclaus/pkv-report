@@ -1,6 +1,8 @@
 # typst Report Template for German Psychotherapy (PKV)
 
-[![License: MIT](https://img.shields.io/github/license/benediktclaus/pkv-report)](LICENSE)
+![GitHub License](https://img.shields.io/github/license/benediktclaus/pkv-report)
+![GitHub Release](https://img.shields.io/github/v/release/benediktclaus/pkv-report)
+![GitHub last commit](https://img.shields.io/github/last-commit/benediktclaus/pkv-report)
 
 A typst template for creating psychotherapy reports for German private health insurance providers (PKV) and Beihilfe. This template automates the layout and formatting, allowing you to focus on the content.
 
