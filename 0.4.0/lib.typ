@@ -21,11 +21,15 @@
   body,
 ) = {
   set par(justify: true)
-  set text(font: "STIX Two Text", number-type: "lining", lang: "de", size: 11pt)
-  show math.equation: set text(font: "STIX Two Math", size: 11pt)
+  set text(font: "Quadraat Pro", number-type: "lining", lang: "de", size: 11.2pt)
+  show math.equation: set text(font: "Quadraat Pro", size: 11.2pt)
   set page(
     margin: (x: 20mm, y: 20mm),
-    numbering: "1/1",
+    footer: {
+      set align(center)
+      set text(number-type: "old-style")
+      context counter(page).display("1/1", both: true)
+    }
   )
 
   set heading(numbering: "I.1")
@@ -45,7 +49,7 @@
   [#grid(
       columns: (11%, 1fr),
       [Absender:],
-      [Dr. rer. medic. Benedikt Claus, Praxis für Psychologische Psychotherapie Dortmund Husen/Kurl, Plaßstr. 7, 44319 Dortmund],
+      [Dr. rer. medic. Benedikt Schäfer, Praxis für Psychologische Psychotherapie Dortmund Husen/Kurl, Plaßstr. 7, 44319 Dortmund],
     )
 
     Bericht an die Gutachterin/den Gutachter zum Antrag auf Anerkennung der Beihilfefähigkeit für Psychotherapie
@@ -109,7 +113,7 @@
     line(length: 100%, stroke: (thickness: 0.8pt)),
     box(width: 100%, height: 7em, stroke: (bottom: 0.8pt, right: 0.8pt)),
 
-    [Ort, Datum], [Dr. Benedikt Claus], [Stempel],
+    [Ort, Datum], [Dr. Benedikt Schäfer], [Stempel],
     [], [#text(size: 0.8em)[Psychologischer Psychotherapeut (VT)]],
   )
 }
